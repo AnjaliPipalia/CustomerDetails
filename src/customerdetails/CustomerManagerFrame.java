@@ -65,6 +65,7 @@ public class CustomerManagerFrame extends javax.swing.JFrame {
         btnDelete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Customer Manager");
 
         customerTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

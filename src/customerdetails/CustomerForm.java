@@ -31,8 +31,7 @@ public class CustomerForm extends javax.swing.JFrame {
 
     CustomerDB db;
     Customer c;
-    JFrame jf = new JFrame();
-    ArrayList<Customer> list;
+     ArrayList<Customer> list;
     private CustomerManagerFrame manager;
     private String id;
 
@@ -42,8 +41,9 @@ public class CustomerForm extends javax.swing.JFrame {
     private CustomerForm() {
         db = CustomerDB.getInstance();
         initComponents();
-        jf.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-
+       
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        
     }
 
     @SuppressWarnings("unchecked")
@@ -59,7 +59,8 @@ public class CustomerForm extends javax.swing.JFrame {
         btnAddNew = new javax.swing.JButton();
         btnUpdateNew = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Customer Form");
 
         lblEmail.setText("       Email:");
 
